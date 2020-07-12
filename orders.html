@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Fantastic Burger</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/orders.html">Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">About</a>
+        </li>
+    </div>
+  </nav>
+  <div class="container">
+    <form>
+      <fieldset>
+        <legend>Személyes adatok</legend>
+        <div>
+          <label for="name" name="name">Név: *</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="email" name="email">Email cím: *</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div>
+          <label for="address" name="address">Cím: *</label>
+          <input id="address" name="address" type="text" required>
+        </div>
+        <div>
+          <label for="comment" name="comment">Megjegyzés:</label>
+          <textarea id="comment" name="comment" rows="5"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Termék adatai</legend>
+        <span>Extra feltét:</span>
+        <div>
+          <input type="radio" name="extra" id="nothing" value="0">
+          <label for="nothing">Nem kérek</label>
+        </div>
+        <div>
+          <input type="radio" name="extra" id="cheese" value="300">
+          <label for="cheese">Feltét 1</label>
+        </div>
+        <div>
+          <input type="radio" name="extra" id="double meet" value="1000">
+          <label for="double meet">Feltét 2</label>
+        </div>
+        <div>
+          <input type="radio" name="extra" id="double-double" value="1500">
+          <label for="double-double">Feltét 3</label>
+        </div>
+        <div>
+          <input type="radio" name="extra" id="something else" value="1800">
+          <label for="something else">Feltét 4</label>
+        </div>
+        <div>
+          <label for="sauce">Szósz</label>
+          <select name="sauce" id="sauce">
+            <option value="0" selected>szósz 1</option>
+            <option value="100">szósz 2</option>
+          </select>
+        </div>
+      </fieldset>
+      <div>
+        <input type="button" value="Rendelés leadása"> Ár: <span>12000</span> Ft
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
